@@ -39,16 +39,16 @@ export default function Navbar({ dict, locale }: NavbarProps) {
 
         <div className="hidden items-center gap-8 md:flex">
           <Link
+            href={`/${locale}/browse`}
+            className="text-sm font-medium text-navy/70 transition-colors hover:text-navy"
+          >
+            {dict.nav.skills}
+          </Link>
+          <Link
             href={`/${locale}#how-it-works`}
             className="text-sm font-medium text-navy/70 transition-colors hover:text-navy"
           >
             {dict.nav.howItWorks}
-          </Link>
-          <Link
-            href={`/${locale}#skills`}
-            className="text-sm font-medium text-navy/70 transition-colors hover:text-navy"
-          >
-            {dict.nav.skills}
           </Link>
         </div>
 

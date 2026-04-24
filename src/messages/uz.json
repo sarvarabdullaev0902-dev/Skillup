@@ -50,5 +50,42 @@
   "footer": {
     "tagline": "Talabalar uchun, talabalar tomonidan.",
     "rights": "Barcha huquqlar himoyalangan."
+  },
+  "browse": {
+    "title": "Xizmatlarni ko'rish",
+    "searchPlaceholder": "Xizmat yoki o'qituvchini qidiring...",
+    "allCategories": "Barcha",
+    "noResults": "Qidiruv natijasi topilmadi",
+    "noResultsHint": "Boshqa kalit so'z yoki kategoriya tanlang.",
+    "sessions": "ta mashg'ulot",
+    "minutes": "daqiqa",
+    "perSession": "har bir mashg'ulot",
+    "orders": "buyurtma",
+    "verified": "Tasdiqlangan",
+    "offline": "Yuzma-yuz",
+    "viewService": "Batafsil"
+  },
+  "service": {
+    "breadcrumbBrowse": "Xizmatlar",
+    "bookNow": "Band qilish",
+    "demoModalTitle": "Demo rejim",
+    "demoModalBody": "Bu demo versiya — haqiqiy platformada siz shu yerda o'qituvchi bilan uchrashuv vaqtini tanlagan bo'lar edingiz.",
+    "demoModalClose": "Yopish",
+    "escrowNotice": "To'lov barcha mashg'ulotlar tugaguncha saqlangan bo'ladi",
+    "aboutTeacher": "O'qituvchi haqida",
+    "memberSince": "A'zo bo'lgan sana",
+    "sessionsTaught": "O'tkazilgan mashg'ulotlar",
+    "rating": "Reyting",
+    "whatYoullLearn": "Nima o'rganasiz",
+    "sessionStructure": "Mashg'ulotlar tuzilmasi",
+    "session": "Mashg'ulot",
+    "locationTitle": "Joylashuv",
+    "locationNote": "Aniq manzil band qilingandan so'ng yuboriladi",
+    "otherByTeacher": "O'qituvchining boshqa xizmatlari",
+    "similarServices": "O'xshash xizmatlar",
+    "format": "Format",
+    "duration": "Davomiylik",
+    "totalSessions": "Mashg'ulotlar soni",
+    "minutes": "daqiqa"
   }
 }

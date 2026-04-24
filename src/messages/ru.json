@@ -50,5 +50,42 @@
   "footer": {
     "tagline": "Для студентов, силами студентов.",
     "rights": "Все права защищены."
+  },
+  "browse": {
+    "title": "Каталог услуг",
+    "searchPlaceholder": "Поиск по услугам или преподавателям...",
+    "allCategories": "Все",
+    "noResults": "По вашему запросу ничего не найдено",
+    "noResultsHint": "Попробуйте другое ключевое слово или выберите другую категорию.",
+    "sessions": "занятий",
+    "minutes": "мин",
+    "perSession": "за занятие",
+    "orders": "заказов",
+    "verified": "Проверен",
+    "offline": "Очно",
+    "viewService": "Подробнее"
+  },
+  "service": {
+    "breadcrumbBrowse": "Услуги",
+    "bookNow": "Забронировать",
+    "demoModalTitle": "Демо-режим",
+    "demoModalBody": "Это демо-версия — на реальной платформе здесь вы бы выбирали удобное время для встречи с преподавателем.",
+    "demoModalClose": "Закрыть",
+    "escrowNotice": "Оплата хранится в эскроу до завершения всех занятий",
+    "aboutTeacher": "О преподавателе",
+    "memberSince": "На платформе с",
+    "sessionsTaught": "Проведено занятий",
+    "rating": "Рейтинг",
+    "whatYoullLearn": "Чему вы научитесь",
+    "sessionStructure": "Структура занятий",
+    "session": "Занятие",
+    "locationTitle": "Местоположение",
+    "locationNote": "Точный адрес отправляется после бронирования",
+    "otherByTeacher": "Другие услуги преподавателя",
+    "similarServices": "Похожие услуги",
+    "format": "Формат",
+    "duration": "Длительность",
+    "totalSessions": "Количество занятий",
+    "minutes": "мин"
   }
 }

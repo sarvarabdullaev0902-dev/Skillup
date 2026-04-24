@@ -95,7 +95,7 @@ export default function LandingPage({
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Link
-              href={`/${locale}#skills`}
+              href={`/${locale}/browse`}
               className="group flex items-center gap-2 rounded-full bg-gold px-8 py-3.5 text-sm font-semibold text-navy transition-all hover:bg-gold-light"
             >
               {dict.hero.browseCta}

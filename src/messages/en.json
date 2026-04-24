@@ -50,5 +50,42 @@
   "footer": {
     "tagline": "By students, for students.",
     "rights": "All rights reserved."
+  },
+  "browse": {
+    "title": "Browse Services",
+    "searchPlaceholder": "Search services or tutors...",
+    "allCategories": "All",
+    "noResults": "No services match your search",
+    "noResultsHint": "Try a different keyword or select another category.",
+    "sessions": "sessions",
+    "minutes": "min",
+    "perSession": "per session",
+    "orders": "orders",
+    "verified": "Verified",
+    "offline": "In-person",
+    "viewService": "View"
+  },
+  "service": {
+    "breadcrumbBrowse": "Services",
+    "bookNow": "Book Now",
+    "demoModalTitle": "Demo Mode",
+    "demoModalBody": "This is a demo — on the real platform you would select a time slot and confirm your booking with the tutor here.",
+    "demoModalClose": "Close",
+    "escrowNotice": "Funds held in escrow until all sessions are complete",
+    "aboutTeacher": "About the Tutor",
+    "memberSince": "Member since",
+    "sessionsTaught": "Sessions taught",
+    "rating": "Rating",
+    "whatYoullLearn": "What You'll Learn",
+    "sessionStructure": "Session Structure",
+    "session": "Session",
+    "locationTitle": "Location",
+    "locationNote": "Exact address shared after booking",
+    "otherByTeacher": "Other services by this tutor",
+    "similarServices": "Similar services",
+    "format": "Format",
+    "duration": "Duration",
+    "totalSessions": "Total sessions",
+    "minutes": "min"
   }
 }
