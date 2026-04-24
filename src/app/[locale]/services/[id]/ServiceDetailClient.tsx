@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import {
   Star,
   CheckCircle,
@@ -218,7 +217,8 @@ export default function ServiceDetailClient({
               </h2>
 
               <div className="flex items-start gap-4">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={teacher.avatar}
                   alt={teacher.display_name}
                   width={64}

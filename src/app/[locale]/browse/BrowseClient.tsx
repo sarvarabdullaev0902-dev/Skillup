@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Search, Star, MapPin, Clock, CheckCircle, SlidersHorizontal, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { formatPrice } from '@/lib/format'
@@ -120,7 +119,8 @@ export default function BrowseClient({ dict, locale }: BrowseClientProps) {
                 >
                   {/* Teacher row */}
                   <div className="flex items-center gap-3">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={teacher.avatar}
                       alt={teacher.display_name}
                       width={40}
