@@ -102,7 +102,7 @@ export default function LandingPage({
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href={`/${locale}#get-started`}
+              href={`/${locale}/become-a-tutor`}
               className="rounded-full border border-cream/20 px-8 py-3.5 text-sm font-semibold text-cream transition-all hover:border-cream/50 hover:bg-cream/10"
             >
               {dict.hero.teachCta}
@@ -341,7 +341,7 @@ export default function LandingPage({
               {dict.hero.browseCta}
             </Link>
             <Link
-              href={`/${locale}#skills`}
+              href={`/${locale}/become-a-tutor`}
               className="rounded-full border-2 border-navy/20 px-8 py-3.5 text-sm font-semibold text-navy transition-colors hover:border-navy/40"
             >
               {dict.hero.teachCta}

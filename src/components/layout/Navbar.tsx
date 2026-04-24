@@ -51,6 +51,12 @@ export default function Navbar({ dict, locale }: NavbarProps) {
             {dict.nav.howItWorks}
           </Link>
           <Link
+            href={`/${locale}/become-a-tutor`}
+            className="text-sm font-medium text-navy/70 transition-colors hover:text-navy"
+          >
+            {dict.nav.becomeTutor}
+          </Link>
+          <Link
             href={`/${locale}/dashboard`}
             className="text-sm font-medium text-navy/70 transition-colors hover:text-navy"
           >
