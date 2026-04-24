@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "howItWorks": "How It Works",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "For Universities in Uzbekistan",
+    "heading": "Share Knowledge, Grow Skills",
+    "subheading": "SkillUp is a peer-to-peer learning platform where students teach and learn from each other. Earn SkillCoin by teaching, spend it by learning.",
+    "browseCta": "Browse Skills",
+    "teachCta": "Become a Tutor"
+  },
+  "howItWorks": {
+    "badge": "Process",
+    "heading": "Start in 3 Simple Steps",
+    "subheading": "The platform is easy to use — sign up, find a skill, and start learning today.",
+    "step1": {
+      "title": "Browse",
+      "description": "Explore hundreds of skills offered by fellow students: coding, languages, music, and more."
+    },
+    "step2": {
+      "title": "Book",
+      "description": "Pick a time that suits you and schedule an in-person session with a tutor."
+    },
+    "step3": {
+      "title": "Learn",
+      "description": "Meet in person, spend SkillCoin to learn. Teach your own skills to earn more."
+    }
+  },
+  "skillcoin": {
+    "badge": "SkillCoin",
+    "heading": "Knowledge Is the New Currency",
+    "subheading": "SkillCoin is the platform's internal currency. Earn by teaching, spend by learning.",
+    "rate": "1 SkillCoin = 1,000 UZS",
+    "fee": "Platform takes a 10% service fee",
+    "earnTitle": "How to Earn?",
+    "earnDesc": "List your skill and start teaching — receive SkillCoin for every session you complete.",
+    "spendTitle": "How to Spend?",
+    "spendDesc": "Take lessons from any tutor — SkillCoin is automatically deducted from your balance."
+  },
+  "stats": {
+    "heading": "SkillUp by the Numbers",
+    "students": "Active Students",
+    "skills": "Skills Listed",
+    "sessions": "Sessions Completed",
+    "rating": "Average Rating"
+  },
+  "footer": {
+    "tagline": "By students, for students.",
+    "rights": "All rights reserved."
+  }
+}

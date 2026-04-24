@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "skills": "Ko'nikmalar",
+    "howItWorks": "Qanday ishlaydi",
+    "signIn": "Kirish",
+    "getStarted": "Boshlash"
+  },
+  "hero": {
+    "badge": "O'zbekiston universitetlari uchun",
+    "heading": "Bilimingizni ulashing, ko'nikmalaringizni oshiring",
+    "subheading": "SkillUp — talabalarga bir-biridan o'rganish imkonini beruvchi platforma. Dars bering, SkillCoin ishlang va yangi ko'nikmalar egallang.",
+    "browseCta": "Ko'nikmalarni ko'rish",
+    "teachCta": "O'rgatuvchi bo'lish"
+  },
+  "howItWorks": {
+    "badge": "Jarayon",
+    "heading": "3 qadamda boshlang",
+    "subheading": "Platforma ishlatish juda oddiy — ro'yxatdan o'ting, ko'nikmalarni toping va o'rganishni boshlang.",
+    "step1": {
+      "title": "Ko'rib chiqing",
+      "description": "Talabalar tomonidan taklif etilayotgan yuzlab ko'nikmalarni ko'ring: dasturlash, til o'rganish, musiqa va boshqalar."
+    },
+    "step2": {
+      "title": "Band qiling",
+      "description": "O'zingizga qulay vaqtni tanlang va o'rgatuvchi bilan yuz ko'rishib uchrashuvni belgilang."
+    },
+    "step3": {
+      "title": "O'rganing",
+      "description": "Yuz ko'rishib o'rganib, SkillCoin sarflang. O'zingiz ham o'rgatib, SkillCoin ishlang."
+    }
+  },
+  "skillcoin": {
+    "badge": "SkillCoin",
+    "heading": "Bilim — yangi pul",
+    "subheading": "SkillCoin platformaning ichki valyutasi. Dars berib pul ishlang, o'rganib sarflang.",
+    "rate": "1 SkillCoin = 1 000 UZS",
+    "fee": "Platforma 10% xizmat to'lovi oladi",
+    "earnTitle": "Qanday ishlash mumkin?",
+    "earnDesc": "Ko'nikmaingizni ro'yxatga kiriting va dars bering — har bir seans uchun SkillCoin oling.",
+    "spendTitle": "Qanday sarflash mumkin?",
+    "spendDesc": "Istalgan o'rgatuvchidan dars oling — SkillCoin hisobingizdan avtomatik ayiriladi."
+  },
+  "stats": {
+    "heading": "Raqamlarda SkillUp",
+    "students": "Faol talabalar",
+    "skills": "Ko'nikmalar",
+    "sessions": "O'tkazilgan seanslar",
+    "rating": "O'rtacha reyting"
+  },
+  "footer": {
+    "tagline": "Talabalar uchun, talabalar tomonidan.",
+    "rights": "Barcha huquqlar himoyalangan."
+  }
+}
