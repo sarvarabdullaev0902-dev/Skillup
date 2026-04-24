@@ -50,6 +50,12 @@ export default function Navbar({ dict, locale }: NavbarProps) {
           >
             {dict.nav.howItWorks}
           </Link>
+          <Link
+            href={`/${locale}/dashboard`}
+            className="text-sm font-medium text-navy/70 transition-colors hover:text-navy"
+          >
+            {dict.nav.dashboard}
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">
@@ -73,7 +79,7 @@ export default function Navbar({ dict, locale }: NavbarProps) {
           </div>
 
           <Link
-            href={`/${locale}#get-started`}
+            href={`/${locale}/dashboard`}
             className="hidden rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream transition-colors hover:bg-navy-light md:block"
           >
             {dict.nav.getStarted}

@@ -492,6 +492,188 @@ export const SERVICES: Service[] = [
   },
 ]
 
+// ─── Dashboard / wallet types ─────────────────────────────
+
+export interface CurrentUser {
+  id: string
+  display_name: string
+  username: string
+  avatar: string
+  faculty_uz: string
+  faculty_ru: string
+  faculty_en: string
+  joined_at: string
+  balance_coins: number
+  locked_coins: number
+  lifetime_earned: number
+  lifetime_spent: number
+  is_teacher: boolean
+  rating: number
+  rating_count: number
+}
+
+export interface Order {
+  id: string
+  service_id: string
+  buyer_id: string
+  teacher_id: string
+  num_sessions: number
+  completed_sessions: number
+  status: 'active' | 'completed' | 'pending' | 'disputed'
+  created_at: string
+  price_coins: number
+}
+
+export interface UserSession {
+  id: string
+  order_id: string
+  sequence_num: number
+  scheduled_at: string
+  duration_min: number
+  location: string
+  status: 'upcoming' | 'completed' | 'cancelled'
+}
+
+export interface Transaction {
+  id: string
+  type: 'topup' | 'escrow_lock' | 'escrow_release' | 'earn' | 'fee' | 'withdrawal'
+  amount_coins: number
+  balance_after: number
+  note: string
+  created_at: string
+  reference_id: string | null
+}
+
+// ─── Current user (demo "logged-in" user) ─────────────────
+
+export const CURRENT_USER: CurrentUser = {
+  id: 'current-user-1',
+  display_name: 'Sarvar Abdullayev',
+  username: 'sarvar_a',
+  avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=sarvar_a&backgroundColor=0F2044,C8A94D',
+  faculty_uz: 'Matematika fakulteti, 3-kurs',
+  faculty_ru: 'Факультет математики, 3 курс',
+  faculty_en: 'Mathematics Faculty, Year 3',
+  joined_at: '2024-09-15',
+  balance_coins: 47,
+  locked_coins: 24,
+  lifetime_earned: 89,
+  lifetime_spent: 156,
+  is_teacher: true,
+  rating: 4.7,
+  rating_count: 18,
+}
+
+// ─── Orders ───────────────────────────────────────────────
+
+export const MY_ORDERS: Order[] = [
+  {
+    id: 'o1',
+    service_id: 's1',
+    buyer_id: 'current-user-1',
+    teacher_id: 't1',
+    num_sessions: 5,
+    completed_sessions: 3,
+    status: 'active',
+    created_at: '2025-03-13',
+    price_coins: 12,
+  },
+  {
+    id: 'o2',
+    service_id: 's10',
+    buyer_id: 'current-user-1',
+    teacher_id: 't10',
+    num_sessions: 10,
+    completed_sessions: 4,
+    status: 'active',
+    created_at: '2025-01-28',
+    price_coins: 15,
+  },
+  {
+    id: 'o3',
+    service_id: 's3',
+    buyer_id: 'current-user-1',
+    teacher_id: 't3',
+    num_sessions: 8,
+    completed_sessions: 8,
+    status: 'completed',
+    created_at: '2024-10-22',
+    price_coins: 10,
+  },
+  {
+    id: 'o4',
+    service_id: 's2',
+    buyer_id: 'current-user-1',
+    teacher_id: 't2',
+    num_sessions: 6,
+    completed_sessions: 6,
+    status: 'completed',
+    created_at: '2024-09-22',
+    price_coins: 8,
+  },
+  {
+    id: 'o5',
+    service_id: 's5',
+    buyer_id: 'current-user-1',
+    teacher_id: 't5',
+    num_sessions: 5,
+    completed_sessions: 0,
+    status: 'pending',
+    created_at: '2025-04-20',
+    price_coins: 9,
+  },
+  {
+    id: 'o6',
+    service_id: 's11',
+    buyer_id: 'current-user-1',
+    teacher_id: 't2',
+    num_sessions: 5,
+    completed_sessions: 2,
+    status: 'disputed',
+    created_at: '2025-03-01',
+    price_coins: 7,
+  },
+]
+
+// ─── Sessions ─────────────────────────────────────────────
+
+export const MY_SESSIONS: UserSession[] = [
+  { id: 'ss1', order_id: 'o1', sequence_num: 1, scheduled_at: '2025-03-20T10:00:00', duration_min: 60, location: "Mirzo Ulug'bek tumani", status: 'completed' },
+  { id: 'ss2', order_id: 'o1', sequence_num: 2, scheduled_at: '2025-03-27T10:00:00', duration_min: 60, location: "Mirzo Ulug'bek tumani", status: 'completed' },
+  { id: 'ss3', order_id: 'o1', sequence_num: 3, scheduled_at: '2025-04-03T10:00:00', duration_min: 60, location: "Mirzo Ulug'bek tumani", status: 'completed' },
+  { id: 'ss4', order_id: 'o1', sequence_num: 4, scheduled_at: '2025-04-28T10:00:00', duration_min: 60, location: "Mirzo Ulug'bek tumani", status: 'upcoming' },
+  { id: 'ss5', order_id: 'o1', sequence_num: 5, scheduled_at: '2025-05-05T10:00:00', duration_min: 60, location: "Mirzo Ulug'bek tumani", status: 'upcoming' },
+  { id: 'ss6', order_id: 'o2', sequence_num: 1, scheduled_at: '2025-02-10T14:00:00', duration_min: 60, location: 'Yunusobod tumani', status: 'completed' },
+  { id: 'ss7', order_id: 'o2', sequence_num: 2, scheduled_at: '2025-02-17T14:00:00', duration_min: 60, location: 'Yunusobod tumani', status: 'completed' },
+  { id: 'ss8', order_id: 'o2', sequence_num: 3, scheduled_at: '2025-02-24T14:00:00', duration_min: 60, location: 'Yunusobod tumani', status: 'completed' },
+  { id: 'ss9', order_id: 'o2', sequence_num: 4, scheduled_at: '2025-03-03T14:00:00', duration_min: 60, location: 'Yunusobod tumani', status: 'completed' },
+  { id: 'ss10', order_id: 'o2', sequence_num: 5, scheduled_at: '2025-04-26T14:00:00', duration_min: 60, location: 'Yunusobod tumani', status: 'upcoming' },
+  { id: 'ss11', order_id: 'o5', sequence_num: 1, scheduled_at: '2025-04-30T16:00:00', duration_min: 90, location: "Mirzo Ulug'bek tumani", status: 'upcoming' },
+  { id: 'ss12', order_id: 'o6', sequence_num: 1, scheduled_at: '2025-03-15T11:00:00', duration_min: 90, location: 'Yunusobod tumani', status: 'completed' },
+  { id: 'ss13', order_id: 'o6', sequence_num: 2, scheduled_at: '2025-03-22T11:00:00', duration_min: 90, location: 'Yunusobod tumani', status: 'completed' },
+  { id: 'ss14', order_id: 'o6', sequence_num: 3, scheduled_at: '2025-04-01T11:00:00', duration_min: 90, location: 'Yunusobod tumani', status: 'cancelled' },
+]
+
+// ─── Transactions ─────────────────────────────────────────
+
+export const MY_TRANSACTIONS: Transaction[] = [
+  { id: 'tx1',  type: 'topup',         amount_coins:  50, balance_after:  50, note: 'Top-up via Click',                  created_at: '2024-09-16', reference_id: 'CLICK-291847' },
+  { id: 'tx2',  type: 'escrow_lock',   amount_coins:  -8, balance_after:  42, note: 'Linear Algebra course booking',     created_at: '2024-09-22', reference_id: 'ORD-004' },
+  { id: 'tx3',  type: 'earn',          amount_coins:   8, balance_after:  50, note: 'Linear Algebra — Session 1',        created_at: '2024-10-04', reference_id: 'ORD-EXT-001' },
+  { id: 'tx4',  type: 'fee',           amount_coins:  -1, balance_after:  49, note: 'Platform fee (10%)',                created_at: '2024-10-04', reference_id: null },
+  { id: 'tx5',  type: 'topup',         amount_coins:  30, balance_after:  79, note: 'Top-up via Payme',                  created_at: '2024-10-19', reference_id: 'PAYME-448921' },
+  { id: 'tx6',  type: 'escrow_lock',   amount_coins: -10, balance_after:  69, note: 'Python from Scratch course booking', created_at: '2024-10-25', reference_id: 'ORD-003' },
+  { id: 'tx7',  type: 'earn',          amount_coins:   8, balance_after:  77, note: 'Calculus — Session 1',              created_at: '2024-11-08', reference_id: 'ORD-EXT-002' },
+  { id: 'tx8',  type: 'fee',           amount_coins:  -1, balance_after:  76, note: 'Platform fee (10%)',                created_at: '2024-11-08', reference_id: null },
+  { id: 'tx9',  type: 'escrow_lock',   amount_coins:  -9, balance_after:  67, note: 'Organic Chemistry course booking',  created_at: '2024-11-22', reference_id: 'ORD-005' },
+  { id: 'tx10', type: 'earn',          amount_coins:   8, balance_after:  75, note: 'Linear Algebra — Session 3',        created_at: '2024-12-12', reference_id: 'ORD-EXT-003' },
+  { id: 'tx11', type: 'fee',           amount_coins:  -1, balance_after:  74, note: 'Platform fee (10%)',                created_at: '2024-12-12', reference_id: null },
+  { id: 'tx12', type: 'escrow_lock',   amount_coins:  -8, balance_after:  66, note: 'Russian Conversation course booking', created_at: '2025-01-18', reference_id: 'ORD-EXT-004' },
+  { id: 'tx13', type: 'earn',          amount_coins:   8, balance_after:  74, note: 'Calculus — Session 2',              created_at: '2025-02-15', reference_id: 'ORD-EXT-005' },
+  { id: 'tx14', type: 'fee',           amount_coins:  -1, balance_after:  73, note: 'Platform fee (10%)',                created_at: '2025-02-15', reference_id: null },
+  { id: 'tx15', type: 'withdrawal',    amount_coins: -26, balance_after:  47, note: 'Withdrawal to Kapitalbank ****4821', created_at: '2025-03-10', reference_id: 'WD-18472' },
+]
+
 // ─── Helpers ──────────────────────────────────────────────
 
 export function getTeacher(id: string): Teacher | undefined {
