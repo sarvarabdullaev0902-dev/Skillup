@@ -119,7 +119,7 @@ export default function LandingPage({
           >
             <Coins size={20} className="text-gold" />
             <span className="text-sm text-cream/80">
-              1 SkillCoin = 1 000 UZS
+              1 SkillCoin = 5 000 UZS
             </span>
             <span className="rounded-full bg-gold/20 px-2 py-0.5 text-xs font-medium text-gold">
               10% fee

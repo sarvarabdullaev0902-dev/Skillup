@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'SkillUp — Peer-to-Peer Learning Platform',
-  description: 'Exchange skills with fellow students using SkillCoin. 1 SkillCoin = 1,000 UZS.',
+  description: 'Exchange skills with fellow students using SkillCoin. 1 SkillCoin = 5,000 UZS.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

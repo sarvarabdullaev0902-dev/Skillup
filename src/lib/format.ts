@@ -5,7 +5,7 @@ export interface FormattedPrice {
 }
 
 export function formatPrice(coins: number, locale: string): FormattedPrice {
-  const uzsValue = coins * 1000
+  const uzsValue = coins * 5000
 
   const uzsFormatted = new Intl.NumberFormat(
     locale === 'ru' ? 'ru-RU' : locale === 'en' ? 'en-US' : 'uz-UZ',
